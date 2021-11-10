@@ -2,32 +2,44 @@
 <html>
     <head>
         <title>Snake Game</title>
-        <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
-
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
 
-        <div id="score">0</div>
-        <canvas id="snakeboard" width="400" height="400"></canvas>
 
+        <div class="grid-container">
+
+            <div class="text-center">
+                <h3>Score:</h3>
+            </div>
+        
+            <div class ="score" id="score"><s1>0</s1></div>
+          
+        </div>
+        
+        <div class="text-center"><canvas id="snakeboard" width="700" height="700"></canvas></div>
+        <form method="post" action="./startscreen.html">
+            <button type="submit" style="text-align: center;">Quit</button>
+        </form>
         <style>
             #snakeboard{
                 position: absolute;
-                top: 50%;
+                top: 60%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
             #score{
                 text-align: center;
-                font-size: 140px;
+                font-size: 70px;
             }
+            body {background-color: green;}
         </style>
     </body>
 
     <script>
         const board_border = 'black';
-        const board_background = "white";
+        const board_background = "lightgrey";
         const snake_col = 'lightblue';
         const snake_border = 'darkblue';
         

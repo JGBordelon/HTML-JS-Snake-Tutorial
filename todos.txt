@@ -1,5 +1,5 @@
 TO DOS:
-Pretty up the score
-add backround image?
-create start screen with button to lead to actual game
-add restart button
+snakegame.html
+    fix the score - move the number down and to the left
+    add pause?
+    fix quit button location
